@@ -1,0 +1,33 @@
+{
+  "deckId": "deep-questions-ru_RU",
+  "lang": "ru_RU",
+  "baseDeckId": "deep-questions",
+  "name": "Глубокие мысли",
+  "description": "Вопросы для глубоких размышлений о жизни",
+  "version": 1,
+  "source": "https://r3code.github.io/random-coffee-decks/decks/deep-questions-ru_RU.json",
+  "questions": [
+    { "id": "q1", "text": "Какое событие в жизни сильно изменило твои взгляды?", "categoryId": "self" },
+    { "id": "q2", "text": "Что ты считаешь своим главным достижением, о котором мало кто знает?", "categoryId": "self" },
+    { "id": "q3", "text": "Если бы ты мог узнать абсолютную истину об одном вопросе вселенной, что бы это было?", "categoryId": "values" },
+    { "id": "q4", "text": "Какой совет ты бы дал себе 10 лет назад?", "categoryId": "memory" },
+    { "id": "q5", "text": "Что для тебя значит успех?", "categoryId": "values" },
+    { "id": "q6", "text": "Какой самый важный урок ты извлек из неудачи?", "categoryId": "fears" },
+    { "id": "q7", "text": "Что тебя больше всего вдохновляет в людях?", "categoryId": "relationships" },
+    { "id": "q8", "text": "Если бы ты мог прожить один день в жизни другого человека, кто бы это был?", "categoryId": "relationships" },
+    { "id": "q9", "text": "Какая твоя мечта кажется тебе самой нереальной?", "categoryId": "memory" },
+    { "id": "q10", "text": "Что ты хочешь, чтобы люди помнили о тебе?", "categoryId": "values" },
+    { "id": "q11", "text": "Какой момент в жизни был для тебя самым счастливым?", "categoryId": "memory" },
+    { "id": "q12", "text": "Что ты ценишь в дружбе больше всего?", "categoryId": "relationships" },
+    { "id": "q13", "text": "Какой страх мешает тебе двигаться вперед?", "categoryId": "fears" },
+    { "id": "q14", "text": "Что бы ты изменил в мире, если бы мог?", "categoryId": "values" },
+    { "id": "q15", "text": "Какой комплимент тебе запомнился больше всего?", "categoryId": "relationships" }
+  ],
+  "categories": {
+    "relationships": { "name": "Отношения", "color": "#ec4899" },
+    "self": { "name": "Самопознание", "color": "#3b82f6" },
+    "values": { "name": "Ценности", "color": "#10b981" },
+    "memory": { "name": "Память и будущее", "color": "#f59e0b" },
+    "fears": { "name": "Чего боимся", "color": "#8b5cf6" }
+  }
+}

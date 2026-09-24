@@ -1,0 +1,87 @@
+name: Build index and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Lint decks and generate index.json
+        run: |
+          node -e '
+            const fs = require("fs");
+            const path = require("path");
+            const decksDir = "decks";
+            const langRe = /^[a-z]{2}_[A-Z]{2}$/;
+            const deckIdRe = /^[a-z0-9-]+-[a-z]{2}_[A-Z]{2}$/;
+            let errors = [];
+            const items = [];
+            const files = fs.readdirSync(decksDir).filter(f => f.endsWith(".json"));
+            if (files.length === 0) { console.error("ERROR: No deck files"); process.exit(1); }
+            for (const file of files) {
+              const filePath = path.join(decksDir, file);
+              let deck;
+              try { deck = JSON.parse(fs.readFileSync(filePath, "utf8")); }
+              catch (e) { errors.push(`${file}: Invalid JSON`); continue; }
+              if (!deck.deckId) { errors.push(`${file}: Missing deckId`); continue; }
+              if (!deckIdRe.test(deck.deckId)) errors.push(`${file}: deckId must match ^[a-z0-9-]+-[a-z]{2}_[A-Z]{2}$`);
+              const lang = deck.lang || "ru_RU";
+              if (!langRe.test(lang)) errors.push(`${file}: lang must match ^[a-z]{2}_[A-Z]{2}$`);
+              if (!deck.deckId.endsWith("-" + lang)) errors.push(`${file}: deckId must end with "-${lang}"`);
+              if (!deck.name || typeof deck.name !== "string") errors.push(`${file}: name required`);
+              else if (deck.name.length > 128) errors.push(`${file}: name > 128 chars`);
+              if (!Array.isArray(deck.questions) || deck.questions.length === 0) { errors.push(`${file}: questions non-empty array`); continue; }
+              const qIds = new Set();
+              for (const q of deck.questions) {
+                if (!q.id || typeof q.id !== "string") errors.push(`${file}: question missing id`);
+                if (!q.text || typeof q.text !== "string") errors.push(`${file}: question missing text`);
+                if (qIds.has(q.id)) errors.push(`${file}: dup question id "${q.id}"`);
+                qIds.add(q.id);
+                if (q.categoryId && deck.categories && !deck.categories[q.categoryId])
+                  errors.push(`${file}: question "${q.id}" unknown categoryId "${q.categoryId}"`);
+              }
+              if (deck.orders) for (const o of deck.orders)
+                if (o.sequence.length !== deck.questions.length)
+                  errors.push(`${file}: order "${o.id}" length mismatch`);
+              if (deck.categories) for (const [catId, cat] of Object.entries(deck.categories))
+                if (!cat.name || !cat.color) errors.push(`${file}: category "${catId}" missing name/color`);
+              items.push({
+                deckId: deck.deckId, name: deck.name, description: deck.description || "",
+                questionsCount: deck.questions.length, version: deck.version || 1,
+                lang, baseDeckId: deck.baseDeckId || null,
+                url: `https://r3code.github.io/random-coffee-decks/decks/${file}`
+              });
+            }
+            if (errors.length > 0) { console.error("LINT ERRORS:"); for (const e of errors) console.error("  " + e); process.exit(1); }
+            items.sort((a, b) => a.name.localeCompare(b.name));
+            fs.writeFileSync("index.json", JSON.stringify(items, null, 2));
+            console.log(`Generated index.json with ${items.length} decks`);
+          '
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
