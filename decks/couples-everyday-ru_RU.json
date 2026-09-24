@@ -1,0 +1,26 @@
+{
+  "deckId": "couples-everyday-ru_RU",
+  "lang": "ru_RU",
+  "baseDeckId": "couples-everyday",
+  "name": "Повседневность",
+  "description": "Маленькие, но важные моменты ваших обычных дней вдвоём",
+  "version": 1,
+  "source": "https://r3code.github.io/random-coffee-decks/decks/couples-everyday-ru_RU.json",
+  "questions": [
+    { "id": "q1", "text": "Что тебя радует в нашем совместном утре?", "categoryId": "rhythm" },
+    { "id": "q2", "text": "Какая мелочь в нашем быту тебя раздражает?", "categoryId": "habits" },
+    { "id": "q3", "text": "Что ты любишь делать вместе со мной вечером?", "categoryId": "rhythm" },
+    { "id": "q4", "text": "Какой момент дня ты ждёшь больше всего?", "categoryId": "rhythm" },
+    { "id": "q5", "text": "Что ты делаешь для меня, но я этого не замечаю?", "categoryId": "care" },
+    { "id": "q6", "text": "Что я делаю для тебя, но ты не говоришь спасибо?", "categoryId": "care" },
+    { "id": "q7", "text": "Какая привычка у меня тебя умиляет?", "categoryId": "habits" },
+    { "id": "q8", "text": "Что ты хочешь изменить в нашем быту?", "categoryId": "habits" },
+    { "id": "q9", "text": "Что для тебя значит уют в нашем доме?", "categoryId": "care" },
+    { "id": "q10", "text": "Какой обычный день ты хочешь запомнить навсегда?", "categoryId": "rhythm" }
+  ],
+  "categories": {
+    "rhythm": { "name": "Ритм дня", "color": "#f59e0b" },
+    "habits": { "name": "Привычки", "color": "#8b5cf6" },
+    "care": { "name": "Забота", "color": "#ec4899" }
+  }
+}

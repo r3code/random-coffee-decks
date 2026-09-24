@@ -1,0 +1,28 @@
+{
+  "deckId": "couples-intriguing-ru_RU",
+  "lang": "ru_RU",
+  "baseDeckId": "couples-intriguing",
+  "name": "Интригующие",
+  "description": "Вопросы, которые уходят глубже обычной беседы",
+  "version": 1,
+  "source": "https://r3code.github.io/random-coffee-decks/decks/couples-intriguing-ru_RU.json",
+  "questions": [
+    { "id": "q1", "text": "Что ты никогда не простил бы мне?", "categoryId": "boundaries" },
+    { "id": "q2", "text": "Какой свой недостаток ты скрываешь от меня?", "categoryId": "shadow" },
+    { "id": "q3", "text": "Что ты думаешь о моих друзьях — честно?", "categoryId": "honesty" },
+    { "id": "q4", "text": "Когда ты в последний раз ревновал и почему?", "categoryId": "shadow" },
+    { "id": "q5", "text": "Что бы ты сделал, если бы мы расстались?", "categoryId": "boundaries" },
+    { "id": "q6", "text": "Какой секрет ты мне не рассказал?", "categoryId": "shadow" },
+    { "id": "q7", "text": "Что тебя раздражает во мне, но ты молчишь?", "categoryId": "honesty" },
+    { "id": "q8", "text": "Какой границы ты не переступил бы в отношениях?", "categoryId": "boundaries" },
+    { "id": "q9", "text": "Что ты думаешь о моих родителях?", "categoryId": "honesty" },
+    { "id": "q10", "text": "Чего ты боишься в наших отношениях?", "categoryId": "boundaries" },
+    { "id": "q11", "text": "Что ты изменил в себе ради меня — и жалеешь ли?", "categoryId": "shadow" },
+    { "id": "q12", "text": "Когда ты был счастлив со мной — но не сказал об этом?", "categoryId": "honesty" }
+  ],
+  "categories": {
+    "boundaries": { "name": "Границы", "color": "#ef4444" },
+    "shadow": { "name": "Тень", "color": "#8b5cf6" },
+    "honesty": { "name": "Честность", "color": "#10b981" }
+  }
+}

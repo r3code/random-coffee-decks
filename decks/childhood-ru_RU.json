@@ -1,0 +1,28 @@
+{
+  "deckId": "childhood-ru_RU",
+  "lang": "ru_RU",
+  "baseDeckId": "childhood",
+  "name": "Детство",
+  "description": "Детские воспоминания, мечты и тёплые дни",
+  "version": 1,
+  "source": "https://r3code.github.io/random-coffee-decks/decks/childhood-ru_RU.json",
+  "questions": [
+    { "id": "q1", "text": "Какое воспоминание из детства делает тебя счастливым до сих пор?", "categoryId": "memories" },
+    { "id": "q2", "text": "Кем ты хотел стать в детстве — и почему передумал?", "categoryId": "dreams" },
+    { "id": "q3", "text": "Какую игрушку ты хранил дольше всех?", "categoryId": "memories" },
+    { "id": "q4", "text": "Какой момент ты стесняешься вспоминать?", "categoryId": "memories" },
+    { "id": "q5", "text": "Кто из взрослых повлиял на тебя больше всего?", "categoryId": "people" },
+    { "id": "q6", "text": "Что ты любил делать летом?", "categoryId": "memories" },
+    { "id": "q7", "text": "Какая мечта детства у тебя сбылась?", "categoryId": "dreams" },
+    { "id": "q8", "text": "Какой страх из детства остался с тобой?", "categoryId": "people" },
+    { "id": "q9", "text": "Что ты не простил бы своим родителям — и простил ли?", "categoryId": "people" },
+    { "id": "q10", "text": "Какую игру или занятие ты хотел бы вернуть во взрослую жизнь?", "categoryId": "dreams" },
+    { "id": "q11", "text": "Каким ты был в школе — и каким стал?", "categoryId": "memories" },
+    { "id": "q12", "text": "Что ты хочешь дать своим детям, а что — не хочешь?", "categoryId": "dreams" }
+  ],
+  "categories": {
+    "memories": { "name": "Воспоминания", "color": "#f59e0b" },
+    "dreams": { "name": "Мечты", "color": "#10b981" },
+    "people": { "name": "Люди", "color": "#3b82f6" }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "deckId": "couples-after-fight-ru_RU",
+  "lang": "ru_RU",
+  "baseDeckId": "couples-after-fight",
+  "name": "После ссоры",
+  "description": "Вопросы для восстановления близости после конфликта",
+  "version": 1,
+  "source": "https://r3code.github.io/random-coffee-decks/decks/couples-after-fight-ru_RU.json",
+  "questions": [
+    { "id": "q1", "text": "Что ты почувствовал, когда мы поссорились?", "categoryId": "emotions" },
+    { "id": "q2", "text": "Что я сделал не так — как ты это видишь?", "categoryId": "honesty" },
+    { "id": "q3", "text": "Что ты хочешь, чтобы я понял после нашей ссоры?", "categoryId": "honesty" },
+    { "id": "q4", "text": "Что нам нужно изменить, чтобы этого не повторилось?", "categoryId": "repair" },
+    { "id": "q5", "text": "За что ты хочешь извиниться?", "categoryId": "honesty" },
+    { "id": "q6", "text": "Что ты ценишь в том, как мы миримся?", "categoryId": "repair" },
+    { "id": "q7", "text": "Что тебе помогло успокоиться после ссоры?", "categoryId": "emotions" },
+    { "id": "q8", "text": "Чего ты боялся, когда мы ругались?", "categoryId": "emotions" },
+    { "id": "q9", "text": "Что мы можем сделать прямо сейчас, чтобы стало легче?", "categoryId": "repair" },
+    { "id": "q10", "text": "Что ты хочешь мне сказать, чтобы я услышал?", "categoryId": "honesty" }
+  ],
+  "categories": {
+    "emotions": { "name": "Эмоции", "color": "#ef4444" },
+    "honesty": { "name": "Честность", "color": "#10b981" },
+    "repair": { "name": "Восстановление", "color": "#3b82f6" }
+  }
+}

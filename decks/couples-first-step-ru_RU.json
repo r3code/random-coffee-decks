@@ -1,0 +1,26 @@
+{
+  "deckId": "couples-first-step-ru_RU",
+  "lang": "ru_RU",
+  "baseDeckId": "couples-first-step",
+  "name": "Первый шаг",
+  "description": "Лёгкие вопросы для начала сближения",
+  "version": 1,
+  "source": "https://r3code.github.io/random-coffee-decks/decks/couples-first-step-ru_RU.json",
+  "questions": [
+    { "id": "q1", "text": "Что тебя больше всего привлекло во мне при первой встрече?", "categoryId": "impression" },
+    { "id": "q2", "text": "Какой момент с тобой мне запомнился больше всего?", "categoryId": "impression" },
+    { "id": "q3", "text": "Что ты ценишь в нашем общении?", "categoryId": "closeness" },
+    { "id": "q4", "text": "Что ты хочешь узнать обо мне, но ещё не спросил?", "categoryId": "closeness" },
+    { "id": "q5", "text": "Как ты думаешь, что нас объединяет?", "categoryId": "closeness" },
+    { "id": "q6", "text": "Что для тебя значит доверие в отношениях?", "categoryId": "expectations" },
+    { "id": "q7", "text": "Какой совет ты бы дал нам как паре?", "categoryId": "expectations" },
+    { "id": "q8", "text": "Как ты представляешь наш идеальный вечер?", "categoryId": "expectations" },
+    { "id": "q9", "text": "Что ты ценишь в моём характере?", "categoryId": "impression" },
+    { "id": "q10", "text": "Что бы ты хотел изменить в наших отношениях?", "categoryId": "expectations" }
+  ],
+  "categories": {
+    "impression": { "name": "Первое впечатление", "color": "#ec4899" },
+    "closeness": { "name": "Сближение", "color": "#3b82f6" },
+    "expectations": { "name": "Ожидания", "color": "#10b981" }
+  }
+}

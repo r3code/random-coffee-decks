@@ -1,0 +1,29 @@
+{
+  "deckId": "self-mirror-ru_RU",
+  "lang": "ru_RU",
+  "baseDeckId": "self-mirror",
+  "name": "Зеркало",
+  "description": "Вопросы для честного разговора с собой",
+  "version": 1,
+  "source": "https://r3code.github.io/random-coffee-decks/decks/self-mirror-ru_RU.json",
+  "questions": [
+    { "id": "q1", "text": "Какой момент ты хотел бы пережить заново?", "categoryId": "past" },
+    { "id": "q2", "text": "Что ты скрываешь от самого себя?", "categoryId": "shadow" },
+    { "id": "q3", "text": "Какая твоя черта характера тебе не нравится — и почему?", "categoryId": "shadow" },
+    { "id": "q4", "text": "Что ты ценишь в себе больше всего?", "categoryId": "values" },
+    { "id": "q5", "text": "Какой страх тобой управляет?", "categoryId": "shadow" },
+    { "id": "q6", "text": "Что для тебя значит свобода?", "categoryId": "values" },
+    { "id": "q7", "text": "Какой совет ты дал бы себе 5 лет назад?", "categoryId": "past" },
+    { "id": "q8", "text": "Что ты никогда не простишь себе?", "categoryId": "shadow" },
+    { "id": "q9", "text": "Какая у тебя мечта, о которой никто не знает?", "categoryId": "future" },
+    { "id": "q10", "text": "Что ты считаешь своим главным уроком в жизни?", "categoryId": "past" },
+    { "id": "q11", "text": "Что бы ты сделал, если бы точно знал, что не провалишься?", "categoryId": "future" },
+    { "id": "q12", "text": "Что для тебя важнее — быть правым или быть понятым?", "categoryId": "values" }
+  ],
+  "categories": {
+    "past": { "name": "Прошлое", "color": "#3b82f6" },
+    "shadow": { "name": "Тень", "color": "#8b5cf6" },
+    "values": { "name": "Ценности", "color": "#10b981" },
+    "future": { "name": "Будущее", "color": "#f59e0b" }
+  }
+}

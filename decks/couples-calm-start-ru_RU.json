@@ -1,0 +1,26 @@
+{
+  "deckId": "couples-calm-start-ru_RU",
+  "lang": "ru_RU",
+  "baseDeckId": "couples-calm-start",
+  "name": "Спокойное начало",
+  "description": "Тёплые вопросы для тихих вечеров вдвоём",
+  "version": 1,
+  "source": "https://r3code.github.io/random-coffee-decks/decks/couples-calm-start-ru_RU.json",
+  "questions": [
+    { "id": "q1", "text": "Что ты чувствуешь, когда мы вместе молчим?", "categoryId": "silence" },
+    { "id": "q2", "text": "Как ты понимаешь, что я тебя люблю?", "categoryId": "feelings" },
+    { "id": "q3", "text": "Что ты ценишь в нашей повседневной рутине?", "categoryId": "habits" },
+    { "id": "q4", "text": "Какую привычку или ритуал ты бы хотел создать для нас?", "categoryId": "habits" },
+    { "id": "q5", "text": "Что ты думаешь о нашем будущем?", "categoryId": "feelings" },
+    { "id": "q6", "text": "Что для тебя важнее — слова или поступки?", "categoryId": "feelings" },
+    { "id": "q7", "text": "Как ты реагируешь, когда я расстроен?", "categoryId": "silence" },
+    { "id": "q8", "text": "Что ты хочешь мне сказать, но не решаешься?", "categoryId": "silence" },
+    { "id": "q9", "text": "Что тебя удивляет во мне?", "categoryId": "habits" },
+    { "id": "q10", "text": "Что для тебя значит «быть рядом»?", "categoryId": "feelings" }
+  ],
+  "categories": {
+    "silence": { "name": "Тишина", "color": "#8b5cf6" },
+    "habits": { "name": "Привычки", "color": "#f59e0b" },
+    "feelings": { "name": "Чувства", "color": "#ec4899" }
+  }
+}
