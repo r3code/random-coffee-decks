@@ -1,0 +1,30 @@
+{
+  "deckId": "friends-ru_RU",
+  "lang": "ru_RU",
+  "baseDeckId": "friends",
+  "deckCategory": "friendship",
+  "name": "Для друзей",
+  "description": "Для старой дружбы — воспоминания, ценности, что-то новое",
+  "version": 1,
+  "source": "https://r3code.github.io/random-coffee-decks/decks/friends-ru_RU.json",
+  "questions": [
+    { "id": "fr1",  "text": "Что ты помнишь о нашем первом знакомстве?", "categoryId": "memories" },
+    { "id": "fr2",  "text": "Какое моё решение тебя удивило сильнее всего?", "categoryId": "growth" },
+    { "id": "fr3",  "text": "Что ты никогда мне не рассказывал, но хотел бы?", "categoryId": "secrets" },
+    { "id": "fr4",  "text": "Какое наше общее воспоминание греет тебя больше всего?", "categoryId": "memories" },
+    { "id": "fr5",  "text": "Что ты ценишь в нашей дружбе больше всего?", "categoryId": "values" },
+    { "id": "fr6",  "text": "В чём мы стали разными за эти годы — и хорошо это или нет?", "categoryId": "growth" },
+    { "id": "fr7",  "text": "Что я о тебе знаю, чего не знает почти никто?", "categoryId": "secrets" },
+    { "id": "fr8",  "text": "Какое моё качество тебя раздражает, но ты его терпишь?", "categoryId": "values" },
+    { "id": "fr9",  "text": "Что ты понял о себе через нашу дружбу?", "categoryId": "growth" },
+    { "id": "fr10", "text": "Самый дурацкий наш совместный поступок — что он тебе дал?", "categoryId": "memories" },
+    { "id": "fr11", "text": "Что ты хотел бы, чтобы я знал о тебе, но не спрашивал?", "categoryId": "secrets" },
+    { "id": "fr12", "text": "Как ты видишь нашу дружбу через 10 лет?", "categoryId": "growth" }
+  ],
+  "categories": {
+    "memories": { "name": "Воспоминания", "color": "#10b981" },
+    "values":   { "name": "Ценности", "color": "#3b82f6" },
+    "growth":   { "name": "Рост", "color": "#8b5cf6" },
+    "secrets":  { "name": "Секреты", "color": "#f59e0b" }
+  }
+}

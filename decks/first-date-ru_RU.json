@@ -1,0 +1,30 @@
+{
+  "deckId": "first-date-ru_RU",
+  "lang": "ru_RU",
+  "baseDeckId": "first-date",
+  "deckCategory": "first-date",
+  "name": "Первое свидание",
+  "description": "Лёгкие вопросы для знакомства — без интимности, с интересом",
+  "version": 1,
+  "source": "https://r3code.github.io/random-coffee-decks/decks/first-date-ru_RU.json",
+  "questions": [
+    { "id": "fd1",  "text": "Что тебя больше всего драйвит сейчас?", "categoryId": "curiosity" },
+    { "id": "fd2",  "text": "Самый неожиданный комплимент, что тебе делали?", "categoryId": "fun" },
+    { "id": "fd3",  "text": "Какое твое хобби, о котором мало кто знает?", "categoryId": "icebreaker" },
+    { "id": "fd4",  "text": "Что ты никогда не прощаешь?", "categoryId": "values" },
+    { "id": "fd5",  "text": "Какую книгу или фильм ты бы посоветовал 16-летнему себе?", "categoryId": "curiosity" },
+    { "id": "fd6",  "text": "Что для тебя значит «хороший день»?", "categoryId": "values" },
+    { "id": "fd7",  "text": "Самый запоминающийся момент этого года?", "categoryId": "fun" },
+    { "id": "fd8",  "text": "Что ты в себе ценишь?", "categoryId": "values" },
+    { "id": "fd9",  "text": "Что ты изучаешь новому с удовольствием?", "categoryId": "curiosity" },
+    { "id": "fd10", "text": "Как ты отдыхаешь, когда совсем устал?", "categoryId": "icebreaker" },
+    { "id": "fd11", "text": "Что ты никогда не делал, но очень хочешь?", "categoryId": "fun" },
+    { "id": "fd12", "text": "Что тебя в людях сразу отталкивает, а что притягивает?", "categoryId": "values" }
+  ],
+  "categories": {
+    "icebreaker": { "name": "Лёд", "color": "#f59e0b" },
+    "values":     { "name": "Ценности", "color": "#10b981" },
+    "fun":        { "name": "Веселье", "color": "#ec4899" },
+    "curiosity":  { "name": "Любопытство", "color": "#3b82f6" }
+  }
+}

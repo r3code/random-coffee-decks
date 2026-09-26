@@ -1,0 +1,31 @@
+{
+  "deckId": "family-ru_RU",
+  "lang": "ru_RU",
+  "baseDeckId": "family",
+  "deckCategory": "family",
+  "name": "Семейные разговоры",
+  "description": "Традиции, история, благодарность и будущее семьи",
+  "version": 1,
+  "source": "https://r3code.github.io/random-coffee-decks/decks/family-ru_RU.json",
+  "questions": [
+    { "id": "fm1",  "text": "Какую традицию нашей семьи ты хочешь сохранить?", "categoryId": "traditions" },
+    { "id": "fm2",  "text": "Что ты унаследовал от родителей, что хочешь передать дальше?", "categoryId": "history" },
+    { "id": "fm3",  "text": "Какая история нашей семьи тебя больше всего впечатлила?", "categoryId": "history" },
+    { "id": "fm4",  "text": "За что ты благодарен нашей семье?", "categoryId": "gratitude" },
+    { "id": "fm5",  "text": "Что ты никогда не говорил родителям, но хотел бы?", "categoryId": "values" },
+    { "id": "fm6",  "text": "Что в нашей семье тебя беспокоит, и что ты хочешь с этим сделать?", "categoryId": "values" },
+    { "id": "fm7",  "text": "Каким ты видишь нашу семью через 10 лет?", "categoryId": "future" },
+    { "id": "fm8",  "text": "Что в наших традициях устарело, и что ты хотел бы изменить?", "categoryId": "traditions" },
+    { "id": "fm9",  "text": "За какой момент в детстве ты благодарен родителям больше всего?", "categoryId": "gratitude" },
+    { "id": "fm10", "text": "Какую историю ты хочешь, чтобы знали твои дети о нас?", "categoryId": "history" },
+    { "id": "fm11", "text": "Что тебя в нашей семье делает сильнее?", "categoryId": "values" },
+    { "id": "fm12", "text": "Что ты хочешь начать делать вместе, чего мы раньше не делали?", "categoryId": "future" }
+  ],
+  "categories": {
+    "traditions": { "name": "Традиции", "color": "#8b5cf6" },
+    "history":    { "name": "История", "color": "#f59e0b" },
+    "values":     { "name": "Ценности", "color": "#10b981" },
+    "gratitude":  { "name": "Благодарность", "color": "#ec4899" },
+    "future":     { "name": "Будущее", "color": "#3b82f6" }
+  }
+}

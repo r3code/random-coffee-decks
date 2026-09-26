@@ -30,6 +30,13 @@ jobs:
             const decksDir = "decks";
             const langRe = /^[a-z]{2}_[A-Z]{2}$/;
             const deckIdRe = /^[a-z0-9-]+-[a-z]{2}_[A-Z]{2}$/;
+            // v5.11: deckCategory — опц., но если задан, должен быть из белого списка.
+            // Этот же список живёт в src/data/decks.js основного приложения.
+            // Если меняешь здесь — поменяй и там.
+            const deckCategorySlugs = new Set([
+              "couples", "first-date", "friendship",
+              "family", "work", "self", "party"
+            ]);
             let errors = [];
             const items = [];
             const files = fs.readdirSync(decksDir).filter(f => f.endsWith(".json"));
@@ -47,6 +54,14 @@ jobs:
               if (!deck.name || typeof deck.name !== "string") errors.push(`${file}: name required`);
               else if (deck.name.length > 128) errors.push(`${file}: name > 128 chars`);
               if (!Array.isArray(deck.questions) || deck.questions.length === 0) { errors.push(`${file}: questions non-empty array`); continue; }
+              // v5.11: deckCategory — опц., но если задан, валидный slug
+              if (deck.deckCategory !== undefined && deck.deckCategory !== null) {
+                if (typeof deck.deckCategory !== "string" || !deck.deckCategory.trim()) {
+                  errors.push(`${file}: deckCategory must be non-empty string`);
+                } else if (!deckCategorySlugs.has(deck.deckCategory)) {
+                  errors.push(`${file}: deckCategory "${deck.deckCategory}" not in whitelist: ${[...deckCategorySlugs].join(", ")}`);
+                }
+              }
               const qIds = new Set();
               for (const q of deck.questions) {
                 if (!q.id || typeof q.id !== "string") errors.push(`${file}: question missing id`);
@@ -65,6 +80,7 @@ jobs:
                 deckId: deck.deckId, name: deck.name, description: deck.description || "",
                 questionsCount: deck.questions.length, version: deck.version || 1,
                 lang, baseDeckId: deck.baseDeckId || null,
+                deckCategory: deck.deckCategory || null,
                 url: `https://r3code.github.io/random-coffee-decks/decks/${file}`
               });
             }
