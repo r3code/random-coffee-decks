@@ -2,6 +2,7 @@
   "deckId": "couples-everyday-ru_RU",
   "lang": "ru_RU",
   "baseDeckId": "couples-everyday",
+  "deckCategory": "couples",
   "name": "Повседневность",
   "description": "Маленькие, но важные моменты ваших обычных дней вдвоём",
   "version": 1,

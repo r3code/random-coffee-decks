@@ -2,6 +2,7 @@
   "deckId": "self-mirror-ru_RU",
   "lang": "ru_RU",
   "baseDeckId": "self-mirror",
+  "deckCategory": "self",
   "name": "Зеркало",
   "description": "Вопросы для честного разговора с собой",
   "version": 1,

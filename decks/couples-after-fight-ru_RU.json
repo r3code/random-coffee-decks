@@ -2,6 +2,7 @@
   "deckId": "couples-after-fight-ru_RU",
   "lang": "ru_RU",
   "baseDeckId": "couples-after-fight",
+  "deckCategory": "couples",
   "name": "После ссоры",
   "description": "Вопросы для восстановления близости после конфликта",
   "version": 1,

@@ -2,6 +2,7 @@
   "deckId": "couples-first-step-ru_RU",
   "lang": "ru_RU",
   "baseDeckId": "couples-first-step",
+  "deckCategory": "couples",
   "name": "Первый шаг",
   "description": "Лёгкие вопросы для начала сближения",
   "version": 1,
