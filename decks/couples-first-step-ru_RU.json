@@ -5,7 +5,7 @@
   "deckCategory": "couples",
   "name": "Первый шаг",
   "description": "Лёгкие вопросы для начала сближения",
-  "version": 1,
+  "version": 2,
   "source": "https://r3code.github.io/random-coffee-decks/decks/couples-first-step-ru_RU.json",
   "questions": [
     { "id": "q1", "text": "Что тебя больше всего привлекло во мне при первой встрече?", "categoryId": "impression" },
@@ -18,6 +18,18 @@
     { "id": "q8", "text": "Как ты представляешь наш идеальный вечер?", "categoryId": "expectations" },
     { "id": "q9", "text": "Что ты ценишь в моём характере?", "categoryId": "impression" },
     { "id": "q10", "text": "Что бы ты хотел изменить в наших отношениях?", "categoryId": "expectations" }
+  ],
+  "orders": [
+    { "id": "order_1", "name": "A", "sequence": ["q1", "q2", "q9", "q3", "q5", "q4", "q8", "q6", "q7", "q10"] },
+    { "id": "order_2", "name": "B", "sequence": ["q2", "q1", "q9", "q3", "q5", "q4", "q6", "q8", "q7", "q10"] },
+    { "id": "order_3", "name": "C", "sequence": ["q3", "q5", "q4", "q1", "q2", "q9", "q6", "q8", "q7", "q10"] },
+    { "id": "order_4", "name": "D", "sequence": ["q4", "q5", "q3", "q9", "q1", "q2", "q6", "q7", "q8", "q10"] },
+    { "id": "order_5", "name": "E", "sequence": ["q1", "q9", "q2", "q3", "q5", "q4", "q8", "q6", "q7", "q10"] },
+    { "id": "order_6", "name": "F", "sequence": ["q1", "q3", "q2", "q5", "q9", "q4", "q6", "q8", "q7", "q10"] },
+    { "id": "order_7", "name": "G", "sequence": ["q2", "q1", "q3", "q9", "q5", "q4", "q8", "q6", "q7", "q10"] },
+    { "id": "order_8", "name": "H", "sequence": ["q6", "q8", "q7", "q10", "q3", "q5", "q4", "q1", "q2", "q9"] },
+    { "id": "order_9", "name": "I", "sequence": ["q3", "q5", "q4", "q1", "q2", "q9", "q8", "q6", "q7", "q10"] },
+    { "id": "order_10", "name": "J", "sequence": ["q1", "q2", "q3", "q9", "q5", "q4", "q6", "q8", "q7", "q10"] }
   ],
   "categories": {
     "impression": { "name": "Первое впечатление", "color": "#ec4899" },
